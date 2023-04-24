@@ -7,7 +7,7 @@ import SimpleLayout from "@/layouts/SimpleLayout.vue";
 import NotFound from "@/layouts/NotFound.vue";
 import LoginView from '@/views/LoginView.vue'
 
-import Index from "@/views/total-vuetify/Index.vue";
+// import Index from "@/views/total-vuetify/Index.vue";
 
 import { TotalVuetifyRouter } from "@/router/total-vuetify/total-vuetify";
 
@@ -24,14 +24,14 @@ let _routes: RouteRecordRaw[] = [
           breadcrumbsTitle: "Home",
         },
       },
-      {
-        path: "vuetify",
-        name: "vuetify",
-        component: Index,
-        meta: {
-          breadcrumbsTitle: "vuetify",
-        },
-      },
+      // {
+      //   path: "vuetify",
+      //   name: "vuetify",
+      //   component: Index,
+      //   meta: {
+      //     breadcrumbsTitle: "vuetify",
+      //   },
+      // },
       ...TotalVuetifyRouter,
     ],
   },

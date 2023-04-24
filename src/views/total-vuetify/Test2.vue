@@ -4,20 +4,19 @@ import { useTestStore } from "@/store/test/test";
 import { reactive } from "vue";
 
 const store = useTestStore();
-// store.$reset();
 const state = reactive({
   vd: store.getTest,
 });
 
-const dkm = () => {
-  if (store.status) {
+const next=()=>{
     store.$reset();
-  } }
-dkm();
-const next = () => {
-  store.saveTest("editTest");
-  router.push("test2");
-};
+    router.push('total-vuetify')
+}
+
+const back=()=>{
+    router.push('total-vuetify')
+    store.backTest()
+}
 </script>
 
 <template>
@@ -27,12 +26,12 @@ const next = () => {
         {{ state.vd }}
       </v-col>
     </v-row>
-  </v-container>
-  <v-container> Total Vuetify {{ $t("label.hello") }} </v-container>
-
+ 
   <v-row>
     <v-col class="d-flex justify-end">
-      <v-btn variant="outlined" color="primary" @click="next">Tiếp theo</v-btn>
+        <v-btn variant="outlined" color="primary" @click="back">Quay lại</v-btn>
+        <v-btn variant="outlined" color="primary" @click="next">Tiếp theo</v-btn>
     </v-col>
   </v-row>
+  </v-container>
 </template>

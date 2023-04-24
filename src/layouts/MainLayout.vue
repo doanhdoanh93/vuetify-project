@@ -4,6 +4,7 @@ import AppBar from "@/components/page/AppBar.vue";
 import SystemBar from "@/layouts/SystemBar.vue";
 import SideMenu from "@/layouts/SideMenu.vue";
 import SnackBar from "@/components/SnackBar.vue";
+
 </script>
 
 <template>
