@@ -5,11 +5,12 @@ import HomeView from "@/views/HomeView.vue";
 import SimpleLayout from "@/layouts/SimpleLayout.vue";
 // import EmptyLayout from "@/layouts/EmptyLayout.vue";
 import NotFound from "@/layouts/NotFound.vue";
-import LoginView from '@/views/LoginView.vue'
+import LoginView from "@/views/LoginView.vue";
 
 // import Index from "@/views/total-vuetify/Index.vue";
 
 import { TotalVuetifyRouter } from "@/router/total-vuetify/total-vuetify";
+
 
 let _routes: RouteRecordRaw[] = [
   {

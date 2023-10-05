@@ -2,6 +2,7 @@
 import { onMounted, reactive, watch } from "vue";
 import { useRoute } from "vue-router";
 import { getBreadcrumbsItems } from "@/router/helper";
+import { useHeaderNameStore } from "@/store/header-name/header-name";
 
 export interface BreadcrumbsItem {
   text: string;
@@ -9,6 +10,7 @@ export interface BreadcrumbsItem {
   to: string;
   exact?: boolean;
 }
+const headerName = useHeaderNameStore();
 
 const state = reactive({
   breadcrumbs: [
@@ -46,5 +48,6 @@ watch(
         ></v-breadcrumbs>
       </v-col>
     </v-row>
+    {{ headerName.headerName }}
   </v-container>
 </template>

@@ -5,26 +5,34 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "lint": "eslint . --fix --ignore-path .gitignore"
+    "lint": "eslint . --fix --ignore-path .gitignore",
+    "generate-client": "openapi-generator-cli generate -g  typescript-axios -i ./../Auth/Auth/xxx-api.json --additional-properties=withSeparateModelsAndApi=true,modelPackage=models,apiPackage=api,supportsES6=true -o ./src/generated-api-client"
   },
   "dependencies": {
     "@mdi/font": "7.0.96",
+    "axios": "^1.3.6",
     "dayjs": "^1.11.7",
     "pinia": "^2.0.23",
     "roboto-fontface": "*",
+    "vitest": "^0.31.0",
     "vue": "^3.2.38",
     "vue-i18n": "^9.2.2",
+    "vue-openapi": "^0.10.0",
     "vue-router": "^4.0.0",
     "vuetify": "^3.0.0",
-    "webfontloader": "^1.0.0"
+    "webfontloader": "^1.0.0",
+    "yup": "^1.3.2"
   },
   "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.6.0",
     "@types/node": "^18.11.9",
     "@types/webfontloader": "^1.6.35",
     "@vitejs/plugin-vue": "^3.0.3",
     "@vue/eslint-config-typescript": "^11.0.0",
+    "axios-mock-adapter": "^1.21.4",
     "eslint": "^8.22.0",
     "eslint-plugin-vue": "^9.3.0",
+    "openapi-typescript-codegen": "^0.24.0",
     "typescript": "^4.0.0",
     "vite": "^3.0.9",
     "vite-plugin-vuetify": "^1.0.0-alpha.12",

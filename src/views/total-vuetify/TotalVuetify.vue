@@ -4,15 +4,17 @@ import { useTestStore } from "@/store/test/test";
 import { reactive } from "vue";
 
 const store = useTestStore();
+const temp = store.test;
 // store.$reset();
 const state = reactive({
-  vd: store.getTest,
+  vd: store.test,
 });
 
 const dkm = () => {
   if (store.status) {
     store.$reset();
-  } }
+  }
+};
 dkm();
 const next = () => {
   store.saveTest("editTest");

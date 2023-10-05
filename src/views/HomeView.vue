@@ -13,6 +13,7 @@ const items = [
   { value: "3", text: "ha3" },
 ] as CodeValue[];
 const state = reactive({
+  ti18n: "",
   vd1: "California",
   vd: "2",
 });
@@ -56,6 +57,13 @@ const getText = (item: CodeValue) => {
           :item-title="getText"
           :item-value="getText"
         />
+      </v-col>
+    </v-row>
+
+    <v-row>
+      <v-col> Test validate </v-col>
+      <v-col>
+        {{ state.ti18n }}
       </v-col>
     </v-row>
   </v-container>

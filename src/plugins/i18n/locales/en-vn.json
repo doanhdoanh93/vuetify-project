@@ -4,5 +4,62 @@
   },
   "label": {
     "hello": "Xin chao"
+  },
+  "validations": {
+    "mixed": {
+      "default": "{label}無効です。",
+      "defined": "{label}未定義です。",
+      "required": "{label}必須項目です。",
+      "notNull": "{label} null 以外である必要があります。",
+      "oneOf": "{label}次のいずれかの値である必要があります。{values}",
+      "notOneOf": "{label}次のいずれかの値であってはいけません。{values}",
+      "notType": "{label}形式が違います。"
+    },
+    "array": {
+      "length": "{label}{length} 項目入力してください。",
+      "min": "{label}{min} 項目以上入力してください。",
+      "max": "{label}{max} 項目以下で入力してください。",
+      "notOf": "{label}{values}である必要があります。"
+    },
+    "boolean": {
+      "isValue": "{label}値が必要です。"
+    },
+    "date": {
+      "min": "{label}{min} より後でなければなりません。",
+      "max": "{label}{max} より前でなければなりません。"
+    },
+    "number": {
+      "min": "{label}{min} 以上でなければなりません。",
+      "max": "{label}{max} 以下でなければなりません。",
+      "lessThan": "{label}{less} より小さくなければなりません。",
+      "moreThan": "{label}{more} より大きくなければなりません。",
+      "positive": "{label}正の数でなければなりません。",
+      "negative": "{label}負の数でなければなりません。",
+      "integer": "{label}整数でなければなりません。"
+    },
+    "object": {
+      "noUnknown": "{label}未定義のプロパティを含めることはできません。"
+    },
+    "string": {
+      "length": "{label}{length} 桁で入力してください。",
+      "email": "{label}有効なメールアドレスではありません。",
+      "matches": "{label}正規表現 {regex} に一致しません。",
+      "max": "{label}{max} 文字以内で入力してください。",
+      "min": "{label}{min} 文字以上で入力してください。",
+      "url": "{label}有効な URL ではありません。",
+      "uuid": "{label}有効な UUID でなければなりません。",
+      "trim": "{label}前後にスペースを入れてはいけません。",
+      "lowercase": "{label}小文字のアルファベットのみ使用できます。",
+      "uppercase": "{label}大文字のアルファベットのみ使用できます。",
+      "asCode": "{label}定義されていない区分値です。",
+      "halfKanaOrDigits": "{label}半角ｶﾅと半角数字のみ使用できます。",
+      "numeric": "{label}数字のみ入力できます。",
+      "greaterThanEqual": "{label}{values} より後でなければなりません。"
+    },
+    "original": {
+      "phoneNumber": "{label}有効な電話番号ではありません。",
+      "postalCode": "{label}有効な郵便番号ではありません。",
+      "date": "{label}有効な日付ではありません。"
+    }
   }
 }
